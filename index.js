@@ -18,7 +18,7 @@ app.use("/properties", listingRoutes)
 app.use("/bookings", bookingRoutes)
 
 /* MONGOOSE SETUP */
-const PORT = 3001;
+const PORT = process.env.PORT || 3002;
 mongoose
   .connect(process.env.MONGO_URL, {
     dbName: "duckcuonghomie",
@@ -26,6 +26,6 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+    app.listen(PORT, () => console.log(`Server Port: http://localhost:${PORT}`));
   })
   .catch((err) => console.log(`${err} did not connect`));
