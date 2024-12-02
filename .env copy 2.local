@@ -1,0 +1,5 @@
+MONGO_URL='mongodb+srv://duckcuonghomie:Duckcuonghomie20112024@cluster0.uuk2j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+PORT=3001
+JWT_SECRET='PASSWORDSECRET'
+SERVER_URL=https://duckcuonghomie-be-d3af.onrender.com
+FRONTEND_URL=https://duckcuonghomie-2yee.onrender.com
